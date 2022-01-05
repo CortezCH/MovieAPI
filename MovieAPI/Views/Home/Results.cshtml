@@ -1,0 +1,10 @@
+﻿@model SearchParent
+
+<p>Result Count: @Model.totalResults</p>
+<p>-------------------------</p>
+@foreach(Search s in Model.Search)
+            {
+                <p>Title: @s.Title</p>
+                <p>Year: @s.Year</p>
+                <p>-------------------------</p>
+            }
